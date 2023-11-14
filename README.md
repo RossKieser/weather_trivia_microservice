@@ -35,4 +35,5 @@ Random trivia:  Lightning causes forest fires.
 get_random_trivia() can be used anywhere in the app that needs a piece of random weather trivia
 
 # UML Sequence Diagram
+![UMLSequenceDiagram](https://github.com/RossKieser/weather_trivia_microservice/assets/83362014/b64f6102-f6ae-4563-a6fc-945a767b0ffe)
 
