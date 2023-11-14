@@ -1,0 +1,19 @@
+title Random Trivia Microservice
+
+actor User
+participant Main
+
+participant Microservice
+database weather_facts.txt
+
+
+
+User->Main:call get_random_trivia()
+Main->Microservice:HTTP GET /random_trivia on local host 5000
+Microservice->weather_facts.txt:call get_random_trivia()
+Microservice<--weather_facts.txt:Read .txt file with trivia
+
+Microservice->weather_facts.txt:random.choice(lines).strip()
+Microservice<--weather_facts.txt:random line of trivia
+Microservice->Microservice:Return trivia on randomly chosen line as a JSON
+Main<--Microservice:JSON of random trivia 
