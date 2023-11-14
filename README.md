@@ -1,5 +1,10 @@
 # How to use the weather trivia microservice
 This service retrieves a random piece of weather trivia from a .txt file containing lots of prewritten weather trivia using Flask and HTTP requests. It is intended to run on a temperary URL locally.
+Dependancies:
+Python (I used 3.10)
+Flask
+random
+requests
 
 # How to request data from a microservice
 To retrieve data from the microservice it is nessessary to define a function in the main file (I used python, main.py) and make an HTTP GET request similar to the following:
